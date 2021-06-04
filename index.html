@@ -298,27 +298,36 @@
             <!--Форма-->
             <form action="#" method="GET" class="modal-form">
               <p class="mode-form-head">Оставьте свои данные, мы вам перезвоним</p>
-              <label class="modal-label-field">
+            <label class="modal-label-field">
                 Имя
-              <input type="text" name="user-name" class="modal-form-input" placeholder="Your name *" required minlength="2">
-              </label>
-              <!--<a href="" class="form-link link"><svg class="form-icon"><use href="./images/sprite.svg#icon-person"></use></svg></a>-->
-              <label class="modal-label-field">
+              <span class="modal-form-input-wrapper">
+              <input type="text" name="user-name" class="modal-form-input" placeholder="" required minlength="2">
+              <svg class="form-icon"><use href="./images/icons.svg#icon-person"></use></svg>
+              </span>
+            </label>
+            <label class="modal-label-field">
                 Телефон
-              <input type="tel" name="user-phone" class="modal-form-input" placeholder="Your phone *" required pattern="(0-9)(3)-(0-9)(3)-(0-9)(2)-(0-9)(2)">
+                <span class="modal-form-input-wrapper">
+                <input type="tel" name="user-phone" class="modal-form-input" required 
+                pattern="(0-9){3}-(0-9){3}-(0-9){2}-(0-9){2}" title="096-111-11-11" placeholder="">
+                <svg class="form-icon"><use href="./images/icons.svg#icon-phone"></use></svg>
+              </span>
             </label>
             <label class="modal-label-field">
                 Почта
-              <input type="email" name="user-email" class="modal-form-input" placeholder="Your email *" required>
+                <span class="modal-form-input-wrapper">
+                <input type="email" name="user-email" class="modal-form-input" placeholder="" required title="rubic.bob@123.com">
+              <svg class="form-icon"><use href="./images/icons.svg#icon-email"></use></svg>
+              </span>
             </label>
             <label class="modal-label-field">
               Комментарий
-            <textarea name="user-comment" class="modai-form-comment" placeholder="Введите текст"></textarea>
-          </label>
-          <input type="checkbox" name="user-policy" class="modal-form-checkbox" id="checkbox-policy" required>
+            <textarea name="user-comment" class="modal-form-comment" placeholder="Введите текст"></textarea>
+            </label>
+            <input type="checkbox" name="user-policy" class="modal-form-checkbox" id="checkbox-policy" required>
           <lable for="checkbox-policy" class="modal-form-checkbox-policy">Соглашаюсь с рассылкой и принимаю <a class="modal-policy-form-link" href="">Условия договора</a></lable>
               <button type="submit" class="modal-form-btn">Отправить</button>
-            </form>
+          </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
