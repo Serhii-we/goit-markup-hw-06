@@ -91,7 +91,6 @@
             <p class="description-item">Мобильные приложения</p></li>
             <li class="doing-item"><img src="./images/studio/img2.jpg" alt="Image3" width="370">
             <p class="description-item">Дизайнерские решения</p></li>
-          </div>
         </ul>
       </div>
       </section>
@@ -288,6 +287,15 @@
       </ul>
       </div>
     </div>
+    <div class="subscribe">
+      <p class="footer-form-head">Подпишись на рассылку</p>
+      <form action="#" class="footer-form">
+      <input type="email" name="user-subscribe" class="footer-form-input" placeholder="E-mail">
+      <button type="submit" class="footer-form-btn">Подписаться
+        <svg class="footer-btn-icon" width="24" height="24"><use href="./images/icon.send.svg#icon-iconsend"></use></svg>
+      </button>
+      </form>
+    </div>
     </footer>
     <!--Modal window-->
     <div class="backdrop is-hidden" data-modal>
@@ -325,11 +333,10 @@
             <textarea name="user-comment" class="modal-form-comment" placeholder="Введите текст"></textarea>
             </label>
             <input type="checkbox" name="user-policy" class="modal-form-checkbox visually-hidden" id="checkbox-policy" required>
-            <lable for="checkbox-policy" class="modal-form-checkbox-policy">Соглашаюсь с рассылкой и принимаю<a 
-              class="modal-form-policy-link" href=""> Условия договора</a>
+            <lable for="checkbox-policy" class="modal-form-checkbox-policy">Соглашаюсь с рассылкой и принимаю<a class="modal-form-policy-link" href=""> Условия договора</a>
             </lable>
-              <button type="submit" class="modal-form-btn">Отправить</button>
-          </form>
+            <button type="submit" class="modal-form-btn">Отправить</button>
+            </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
