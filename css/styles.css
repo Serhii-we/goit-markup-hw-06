@@ -703,15 +703,14 @@ transition: transform 250ms var(--timing-func);
 }
 /*Подписаться*/
 .subscribe {
-  display: block;
   margin-left: 93px;
 }
 .footer-form {
-display: flex;
+  display: flex;
+  align-items: center;
+  justify-content:center;
 }
 .footer-form-head {
-  width: 219px;
-  height: 16px;
   color: var(--white-color);
   margin-bottom: 20px;
   font-weight: 700;
@@ -724,7 +723,7 @@ display: flex;
   width: 358px;
   height: 50px;
   padding-left: 16px;
-  border: 1px solid rgba(255 255 255 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -732,14 +731,19 @@ display: flex;
   color:  var(--white-color);
   outline: none;
   transition: transform 250ms var(--timing-func);
+  
+}
+.footer-form-input:focus {
+  border-color: var(--hover-color);
+  transition: transform 250ms var(--timing-func);
 }
 .footer-form-btn {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--white-color);
   margin-left: 12px;
@@ -747,7 +751,7 @@ display: flex;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   border-radius: 4px;
   min-width: 200px;
-  max-height: 50px;
+  height: 50px;
   border: none;
   cursor: pointer;
   transition: background-color 250ms var(--timing-func), box-shadow 250ms var(--timing-func);
