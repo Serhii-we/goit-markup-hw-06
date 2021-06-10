@@ -929,9 +929,12 @@ border-color: red;
 .modal-form-checkbox:focus + .modal-form-checkbox-policy::before {
   outline-color: var(--hover-color);
   transition: transform 250ms var(--timing-func);
+  outline: none;
 }
 .modal-form:focus + .modal-form-checkbox::before {
-  background-color: var(--hover-color);
+  transition: transform 250ms var(--timing-func);
+  outline: none;
+  border-color: var(--main-color);
 }
 .modal-form-policy-link {
   font-weight: 400;
